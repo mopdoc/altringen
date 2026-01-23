@@ -20,9 +20,9 @@ const dict = {
     map_link_osm: "OpenStreetMap →",
     map_link_gmaps: "Google Maps →",
     title_3: "Imagini & credite",
-    credits_text: "În acest pachet, imaginile aeriene sunt „placeholders”. Pentru un site public, înlocuiește-le cu fotografii reale cu licență clară (CC BY / CC BY‑SA) sau cu poze proprii.",
-    ph_1_t: "Ce trebuie să pui în /assets",
-    ph_1_b: "1) aerial_top.jpg — vedere aeriană (sus) • 2) aerial_angle.jpg — vedere aeriană (oblic).\nDetalii în fișierul CREDITS.md.",
+    credits_text: "CREDITS.md conține detalii despre sursele imaginilor aeriene folosite în acest pachet.",
+    ph_1_t: "",
+    ph_1_b: "",
     footer_note: "Un proiect personal dedicat satului Altringen (Kisrékás)."
   },
   en: {
