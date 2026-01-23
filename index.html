@@ -1,56 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <title>Altringen – Coming Soon</title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #050816;
-      color: #f5f5f5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-    .card {
-      max-width: 600px;
-      padding: 2.5rem 3rem;
-      background: rgba(15, 23, 42, 0.9);
-      border-radius: 18px;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
-      border: 1px solid rgba(148, 163, 184, 0.3);
-    }
-    h1 {
-      margin: 0 0 0.75rem;
-      font-size: 2rem;
-    }
-    p {
-      margin: 0.25rem 0;
-      line-height: 1.6;
-      color: #cbd5f5;
-    }
-    .tag {
-      display: inline-block;
-      margin-top: 1.25rem;
-      padding: 0.35rem 0.75rem;
-      border-radius: 999px;
-      background: rgba(56, 189, 248, 0.12);
-      color: #7dd3fc;
-      font-size: 0.8rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-  </style>
+  <title>Altringen (Kisrékás) — sat șvăbesc din Banat</title>
+  <meta name="description" content="Altringen (Kisrékás), comuna Bogda, județul Timiș — un sat bănățean cu istorie de colonizare germană și renaștere recentă prin inițiative civice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="card">
-    <h1>Altringen – Building systems that last</h1>
-    <p>Cloud-native architectures, DevOps, and operational clarity.</p>
-    <p>More coming soon. For now, this page is just a quiet placeholder.</p>
-    <span class="tag">Work in progress</span>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Altringen home">
+      <span class="dot"></span>
+      <span>Altringen</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#village" data-i18n="nav_village">Satul</a>
+      <a href="#visit" data-i18n="nav_visit">Vizită</a>
+      <a href="#credits" data-i18n="nav_credits">Credite</a>
+    </nav>
+
+    <div class="lang">
+      <button class="lang-btn is-active" type="button" data-lang="ro" aria-pressed="true">RO</button>
+      <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main id="top" class="snap">
+    <!-- Scene 1 -->
+    <section class="scene" id="village" data-bg="assets/aerial_top.jpg" aria-label="Aerial view top (replace this image)">
+      <div class="overlay"></div>
+      <div class="content">
+        <p class="eyebrow" data-i18n="eyebrow_1">Timiș • Banat • comuna Bogda</p>
+        <h1 data-i18n="title_1">Un sat șvăbesc mic, cu o poveste mare</h1>
+        <p class="lead" data-i18n="lead_1">
+          Altringen (Kisrékás) e o așezare liniștită, cu case bănățene, livezi și dealuri domoale — aproape de Charlotenburg.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#visit" data-i18n="cta_1">Planifică o vizită</a>
+          <button class="btn ghost" id="toggle-ui" type="button" data-i18n="cta_2">Ascunde textul</button>
+        </div>
+      </div>
+
+      <div class="hint" aria-hidden="true">
+        <span class="mouse"></span>
+        <span data-i18n="scroll_hint">derulează</span>
+      </div>
+    </section>
+
+    <!-- Scene 2 -->
+    <section class="scene" id="visit" data-bg="assets/aerial_angle.jpg" aria-label="Aerial view angle (replace this image)">
+      <div class="overlay"></div>
+      <div class="content compact">
+        <h2 data-i18n="title_2">Vizită pe scurt</h2>
+
+        <ul class="facts">
+          <li>
+            <span class="k" data-i18n="fact_1_k">Unde</span>
+            <span class="v" data-i18n="fact_1_v">în nordul județului Timiș, la ~46 km de Timișoara</span>
+          </li>
+          <li>
+            <span class="k" data-i18n="fact_2_k">Atmosferă</span>
+            <span class="v" data-i18n="fact_2_v">sat de vacanță, restaurări și inițiative comunitare (ex: „Color the Village”)</span>
+          </li>
+          <li>
+            <span class="k" data-i18n="fact_3_k">Istorie</span>
+            <span class="v" data-i18n="fact_3_v">vatră mai veche (Recășel), apoi colonizare germană în sec. XVIII</span>
+          </li>
+        </ul>
+
+        <div class="links">
+          <a class="mini" target="_blank" rel="noopener"
+             href="https://www.openstreetmap.org/search?query=Altringen%2C%20Timi%C8%99" data-i18n="map_link_osm">
+            OpenStreetMap →
+          </a>
+          <a class="mini" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Altringen%2C+Timi%C8%99" data-i18n="map_link_gmaps">
+            Google Maps →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credits -->
+    <section class="scene footer" id="credits" data-bg="assets/aerial_top.jpg" aria-label="Credits">
+      <div class="overlay strong"></div>
+      <div class="content compact">
+        <h2 data-i18n="title_3">Imagini</h2>
+        <p class="muted" data-i18n="credits_text">
+          
+        </p>
+
+        <div class="credit-cards">
+          <article class="card">
+            <h3 data-i18n="ph_1_t">Ce trebuie să pui în /assets</h3>
+            <p class="muted" data-i18n="ph_1_b">
+              Fotografii generate cu chatGPT; Altringen (Kisrékás).
+              <br>Detalii în fișierul CREDITS.md.
+            </p>
+          </article>
+        </div>
+
+        <p class="tiny muted">
+          <span data-i18n="footer_note">Un proiect personal dedicat satului Altringen (Kisrékás).</span>
+        </p>
+      </div>
+    </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
